@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  background-color: #8758FF;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 80%;
+  height: 80%;
+}
+
+h1{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+span{
+  color: #8758FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkbox{
+  accent-color: #1E123B;
+}
+
+.form-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.modal-input{
+  /* height: 150px; */
+  margin-bottom: 20px
+}
+
+.text-input{
+  /* height: 40px; */
+  background-color: transparent;
+  border: 2px solid white;
+  width: 50%;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+}
+
+.taskform{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E123B;
+  width: 50%;
+  height: 60%;
+  gap: 50px;
+
+}
+.tasklist{
+  width: 90%;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  background: #1E123B;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.modal-background {
+  cursor: pointer;
+}
+
+.is-focused .modal-content {
+  outline: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button{
+  background-color: #6C45CE;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  min-width: 220px;
+  font-weight: bold;
+  font-size: large;
 }

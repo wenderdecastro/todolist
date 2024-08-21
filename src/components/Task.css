@@ -1,0 +1,36 @@
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox{
+    border-radius: 5px;
+    border: 2px solid #6C45CE;
+    width: 30px;
+    height: 30px; 
+}
+
+.action-box{
+    border-radius: 5px;
+    border: 2px solid #6C45CE;
+    width: 30px;
+    height: 30px; 
+}
